@@ -6,13 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="4ntti.matikainen@gmail.com">
-        <title>Whee shop</title>
+        <title>Whee</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/shop-homepage.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
         <link href="css/cart.css" rel="stylesheet">
-        <script src="js/jquery.js"></script>
-        <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.tmpl.min.js"></script>
+        
     </head>
     <body>
         <!-- Navigation -->
@@ -21,28 +23,38 @@
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">Valikko</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="images/whee-logo-black.png" /></a>
+                    <a class="navbar-brand" href="#"><img id="wheeLogo" class="svg" src="images/whee-logo-white.svg" /></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                       
+                    <ul class="nav navbar-nav">                       
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
-                <div id="cart" class="pull-right">
-                    <img id="cartImg" src="images/shopping-cart.svg">
-                    <div class="simpleCart_total"></div>                    
+                <div id="cartLogo" class="pull-right">
+                    <div id="shoppingCartText">Ostoskori</div>
+                    <img class="svg" id="cartImg" src="images/shopping-cart.svg">
+                    <div class="simpleCart_quantity"></div>
+                    <div class="circle">
+                        
+                    </div>
                 </div>      
             </div>
             <div id="simpleCartWrapper">
-                <div class="simpleCart_items"></div>            
-                <a href="javascript:;" class="button btn btn-success simpleCart_checkout">Checkout</a>
+                <div class="row">
+                    <div class="simpleCart_items"></div>            
+                </div>
+                <div class="row">
+                    <div class="simpleCart_total"></div>            
+                </div>
+                <div class="row">
+                    <a href="javascript:;" id="checkout" class="pull-right button btn btn-success btn-lg simpleCart_checkout">Kassalle</a>
+                </div>
             </div>                     
         </nav>
         
@@ -64,42 +76,41 @@
             <footer>
                 <div class="row">
                     <div class="col-lg-12">
-                        <p>Copyright &copy; Your Website 2014</p>
+                        <p>Copyright &copy; Whee 2015</p>
                     </div>
                 </div>
             </footer>
         </div>
         <!-- /.container -->
         
-        <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
-        
         <script src="js/simpleCart.js"></script>
         <script src="js/index.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/cart.js"></script>
         
-        <!-- jQuery template for showing an offer item -->
+        <!-- jQuery template for the offer item -->
         <script id="shopItemTemplate" type="text/x-jQuery-tmpl">
-        <div class="col-sm-4 col-lg-4 col-md-4">
-            <div class="thumbnail">
-                <input type="hidden" id="offerid" value=${id} />
-                <img src="${image}" alt="image not available">
-                <div class="caption">
-                    <h4 class="pull-right">${formatPrice(price)}</h4>
-                    <h4><a href="#">${name}</a></h4>
-                    <h4>${formatPrice(price)} /hlö
-                    </h4>
-                    <p>${description}</p>
-                </div>                
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                    <input type="hidden" id="offerid" value=${id} />
+                    <img src="${image}" alt="image not available">
+                    <div class="caption">                       
+                        <h4><a id="offerName" href="#">${name}</a></h4>
+                        <h4><span id="price">${formatPrice(price)} /hlö</span>
+                        </h4>
+                        <p>${description}</p>
+                    </div>                
 
-                <button type="button" id="addToCart.${id}" class="addToCart btn-success btn">Add to cart</button>
+                    <button type="button" id="addToCart.${id}" class="addToCart btn-success btn">Ostoskoriin</button>
+                </div>
             </div>
-        </div>
         </script>
         <script type="text/javascript">
-        
-        function formatPrice(price) {
-        return price.toFixed(2) + " €";
-        }
+            
+            function formatPrice(price) {
+                return price.toFixed(2) + " €";
+            }
         
         </script>
     </body>

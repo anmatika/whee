@@ -1,13 +1,22 @@
 ## 1. ABSTRACT
 
-'''
 Showing travelling agent Whee's travel deal offers. The data comes from the static JSON file "offers.json".
 The data are shown on the main page where user can browse the deals and add them into shopping cart. 
-'''
 
-## 2. TECHNICAL DETAILS
+## 2. PROJECT STRUCTURE
 
-## 3. COMPONENTS USED
++ css
++ fonts
++ images
++ js
+index.html
+offers.json 
+
+## 3. TECHNICAL DETAILS
+
+Cart is based on Simplecartjs.
+
+## 4. COMPONENTS USED
 	
 ### 3.1 Simplecart js
 	http://simplecartjs.org/documentation

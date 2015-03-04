@@ -2,7 +2,7 @@
 	height: auto;
 }
 .navbar {
-	background-color: white;
+	background-color: black;
 }
 
 #contentContainer{
@@ -12,5 +12,24 @@
 body {
 	background-image: url('../images/bg.jpg');
 	background-size: cover;
+	font-size: 18px;
 }
+
+span#price {
+	font-weight: bold;
+}
+
+button.addToCart {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+a#offerName {
+	font-family: 'Pacifico', cursive;
+	font-size: 2em;
+	text-decoration: none;
+	color: brown;
+}
+
 

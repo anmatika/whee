@@ -1,6 +1,8 @@
+"use strict";
+
 (function($){
-	
-	$.getJSON( "offers.json", function( data ) {		
+
+	$.getJSON("offers.json", function(data) {		
 		console.log(data);
 		// Render the offers using the shopItemTemplate
         $("#shopItemTemplate").tmpl(data.offers).appendTo("#shopItemContainer");     
@@ -14,6 +16,7 @@
 			item,
 			id;
 			
+
 			// split addToCart.id and grap the id from the string
 			id = clickedItemId.split('.')[1];	 	
 		 	
@@ -21,12 +24,21 @@
 
 		 	// get the corresponding item from the returned json array
 		 	item = getItem(data.offers, id);
-			console.log('price: ' + item.price);
-			simpleCart.add({ name: item.name , price: item.price , size: "Small" });		 	
+		 	
+		 	if (item !== 0) {
+				console.log("item.image: " + item.image);
+				simpleCart.add(
+					{ 
+						name: item.name, 
+						price: item.price,
+						image: item.image,
+						description: item.description
+					});		 	
+			}
 		});   
 	});
 
-	/** get the item by the id from the given items */
+	/** gets the item by the id from the given items */
 	function getItem (items, id){
 		
 		var i,
@@ -43,12 +55,11 @@
 		return 0;
 	}
 
-	$('#cart').click(function(){
+	// toggles cart visibility
+	$('#cartLogo').click(function(){
 		$('#simpleCartWrapper')
 		// .css({ right: 0 })
 		.toggle("slow");
 	})
-
-	
 
 }(jQuery));
