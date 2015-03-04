@@ -2,15 +2,16 @@
   	width: 32px;
   	height: 32px;
 	position: absolute;
-	top: 5px;
-	right: 5%;
+	top: 0px;
+	right: 200px;
+	/*float: right;*/
 }
 
 #simpleCartWrapper {
 	display: none;
 	background-color: lightgray;
 	height: auto;
-	position: absolute;
+	/*position: absolute;*/
 	z-index: 999;
 	padding: 50px
 }

@@ -45,7 +45,7 @@
 
 	$('#cart').click(function(){
 		$('#simpleCartWrapper')
-		.css({ right: 0 })
+		// .css({ right: 0 })
 		.toggle("slow");
 	})
 
