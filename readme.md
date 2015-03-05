@@ -14,7 +14,9 @@ offers.json
 
 ## 3. TECHNICAL DETAILS
 
-Cart is based on Simplecartjs.
+* Cart is based on Simplecartjs.
+* The look and feel is based on the free bootsrap temlate shop-homepage
+* jQuery.tmpl is used for templating the offer item
 
 ## 4. COMPONENTS USED
 	

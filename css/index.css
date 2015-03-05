@@ -9,6 +9,10 @@
 	padding-top: 75px;
 }
 
+.thumbnail img {
+	height: 320px;
+}
+
 body {
 	background-image: url('../images/bg.jpg');
 	background-size: cover;
@@ -19,7 +23,7 @@ span#price {
 	font-weight: bold;
 }
 
-button.addToCart {
+button.toggleAddToCartMenu {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -32,4 +36,21 @@ a#offerName {
 	color: brown;
 }
 
+.addToCartButtonMenu {
+	display: none;
+	border: 2px solid;
+	position: absolute;
+	bottom: -75px;
+	right: 0;
+	z-index: 999;
+	height: 75px;
+	width: 200px;
+	background-color: blue;
+}
 
+.addToCartButtonMenu .addToCart {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
