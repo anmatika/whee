@@ -1,24 +1,24 @@
 @media only screen and (max-width: 580px) {
-  /* line 2, ../sass/cart.scss */
+  /* line 4, ../sass/cart.scss */
   .simpleCart_items .itemRow .item-description {
     display: none;
   }
 }
 @media only screen and (max-width: 750px) {
-  /* line 8, ../sass/cart.scss */
+  /* line 10, ../sass/cart.scss */
   #shoppingCartText {
     display: none;
   }
 
-  /* line 11, ../sass/cart.scss */
+  /* line 13, ../sass/cart.scss */
   #emptyCart {
     clear: both;
     margin-top: 10px;
     margin-right: 0 !important;
   }
 
-  /* line 16, ../sass/cart.scss */
-  #adults {
+  /* line 18, ../sass/cart.scss */
+  .adultsTxt {
     display: none;
   }
 }
@@ -50,31 +50,90 @@
 /* line 44, ../sass/cart.scss */
 #simpleCartWrapper {
   display: none;
-  /*background-color: #1F87FF;*/
-  background-color: #ABDBF5;
+  background-color: #1F87FF;
   height: auto;
   z-index: 999;
   padding: 70px 10px 10px 50px;
+  color: white;
+}
+/* line 51, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_increment, #simpleCartWrapper .simpleCart_decrement {
   color: black;
 }
-
 /* line 54, ../sass/cart.scss */
-.simpleCart_increment, .simpleCart_decrement {
-  color: black;
+#simpleCartWrapper .simpleCart_items {
+  padding-bottom: 10px;
+}
+/* line 56, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .headerRow {
+  display: none;
+}
+/* line 59, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow {
+  margin-bottom: 100px;
+  position: relative;
+}
+/* line 62, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-name {
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: bold;
+  left: 150px;
+}
+/* line 68, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-description {
+  position: absolute;
+  font-size: 1.2em;
+  left: 350px;
+  font-style: italic;
+  padding-top: 5px;
+}
+/* line 75, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-decrement {
+  position: absolute;
+  font-size: 1.2em;
+  left: 150px;
+  display: block;
+  top: 40px;
+}
+/* line 82, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-price {
+  position: absolute;
+  font-size: 1.2em;
+  left: 150px;
+  top: 80px;
+}
+/* line 88, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-quantity {
+  position: absolute;
+  font-size: 1.2em;
+  left: 170px;
+  top: 40px;
+}
+/* line 94, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-increment {
+  position: absolute;
+  font-size: 1.2em;
+  left: 190px;
+  top: 40px;
+}
+/* line 100, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-image img {
+  position: absolute;
+  font-size: 1.2em;
+  height: 128px;
+  width: 128px;
+  left: 0;
+  border: 2px solid;
 }
 
-/*#cartFooter #emptyCart {
-	position: absolute;
-	right: 200px;
-	bottom: 0;
+/* line 112, ../sass/cart.scss */
+.simpleCart_total {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-#cartFooter #checkout {
-	position: absolute;
-	right: 20px;
-	bottom: 0;
-}*/
-/* line 70, ../sass/cart.scss */
+/* line 116, ../sass/cart.scss */
 .simpleCart_quantity {
   position: absolute;
   right: 63px;
@@ -85,70 +144,7 @@
   z-index: 999;
 }
 
-/* line 80, ../sass/cart.scss */
-.simpleCart_items {
-  padding-bottom: 10px;
-}
-/* line 82, ../sass/cart.scss */
-.simpleCart_items .headerRow {
-  display: none;
-}
-/* line 85, ../sass/cart.scss */
-.simpleCart_items .itemRow {
-  margin-bottom: 100px;
-  position: relative;
-}
-/* line 88, ../sass/cart.scss */
-.simpleCart_items .itemRow .item-name {
-  position: absolute;
-  font-size: 1.2em;
-  left: 150px;
-}
-/* line 93, ../sass/cart.scss */
-.simpleCart_items .itemRow .item-description {
-  position: absolute;
-  font-size: 1.2em;
-  left: 350px;
-}
-/* line 98, ../sass/cart.scss */
-.simpleCart_items .itemRow .item-decrement {
-  position: absolute;
-  font-size: 1.2em;
-  left: 150px;
-  display: block;
-  top: 40px;
-}
-/* line 105, ../sass/cart.scss */
-.simpleCart_items .itemRow .item-price {
-  position: absolute;
-  font-size: 1.2em;
-  left: 150px;
-  top: 80px;
-}
-/* line 111, ../sass/cart.scss */
-.simpleCart_items .itemRow .item-quantity {
-  position: absolute;
-  font-size: 1.2em;
-  left: 170px;
-  top: 40px;
-}
-/* line 117, ../sass/cart.scss */
-.simpleCart_items .itemRow .item-increment {
-  position: absolute;
-  font-size: 1.2em;
-  left: 190px;
-  top: 40px;
-}
-/* line 123, ../sass/cart.scss */
-.simpleCart_items .itemRow .item-image img {
-  position: absolute;
-  font-size: 1.2em;
-  height: 128px;
-  width: 128px;
-  left: 0;
-}
-
-/* line 133, ../sass/cart.scss */
+/* line 126, ../sass/cart.scss */
 #quantityCircle {
   right: 50px;
   top: 0;
@@ -163,15 +159,17 @@
   background: blue;
 }
 
-/* line 147, ../sass/cart.scss */
+/* line 140, ../sass/cart.scss */
 #shoppingCartText {
   position: absolute;
   right: 100px;
   top: 10px;
   text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bold;
 }
 
-/* line 154, ../sass/cart.scss */
+/* line 149, ../sass/cart.scss */
 #cartFooter {
   position: relative;
   height: auto;
@@ -179,31 +177,26 @@
   border-top: 1px solid;
 }
 
-/* line 161, ../sass/cart.scss */
+/* line 156, ../sass/cart.scss */
 .cartButton {
   text-decoration: none;
 }
-/* line 163, ../sass/cart.scss */
+/* line 158, ../sass/cart.scss */
 .cartButton:hover, .cartButton:visited {
   text-decoration: none;
 }
 
-/* line 168, ../sass/cart.scss */
-.simpleCart_total {
-  font-size: 1.8em;
-}
-
-/* line 172, ../sass/cart.scss */
+/* line 163, ../sass/cart.scss */
 #emptyCart {
   margin-right: 50px;
 }
 
-/* line 176, ../sass/cart.scss */
+/* line 167, ../sass/cart.scss */
 #cartFooter span:first-of-type {
   font-weight: bold;
 }
 
-/* line 180, ../sass/cart.scss */
+/* line 171, ../sass/cart.scss */
 #cartLogo {
   color: white;
   cursor: pointer;
