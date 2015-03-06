@@ -5,16 +5,17 @@
 /* line 5, ../sass/offeritem.scss */
 .thumbnail img {
   height: 320px;
+  font-style: italic;
 }
-/* line 8, ../sass/offeritem.scss */
+/* line 9, ../sass/offeritem.scss */
 .thumbnail .caption {
   height: auto;
 }
-/* line 10, ../sass/offeritem.scss */
+/* line 11, ../sass/offeritem.scss */
 .thumbnail .caption h4 {
   text-align: center;
 }
-/* line 14, ../sass/offeritem.scss */
+/* line 15, ../sass/offeritem.scss */
 .thumbnail .descriptionMenu {
   padding: 10px 10px 10px 10px;
   font-style: italic;
@@ -23,7 +24,7 @@
   z-index: 998;
   background-color: white;
 }
-/* line 22, ../sass/offeritem.scss */
+/* line 23, ../sass/offeritem.scss */
 .thumbnail .price {
   height: 36px;
   padding-top: 5px;
@@ -32,17 +33,17 @@
   background-color: #1d6cc4;
   overflow: hidden;
 }
-/* line 31, ../sass/offeritem.scss */
+/* line 32, ../sass/offeritem.scss */
 .thumbnail .priceVal {
   color: white;
   height: 36px;
   font-weight: bold;
 }
-/* line 35, ../sass/offeritem.scss */
+/* line 36, ../sass/offeritem.scss */
 .thumbnail .priceVal span {
   color: #3181db;
 }
-/* line 39, ../sass/offeritem.scss */
+/* line 40, ../sass/offeritem.scss */
 .thumbnail .addToCartButtonMenu {
   display: none;
   border: 2px solid blue;
@@ -55,56 +56,56 @@
   background-color: #1d6cc4;
   color: white;
 }
-/* line 50, ../sass/offeritem.scss */
+/* line 51, ../sass/offeritem.scss */
 .thumbnail .addToCartButtonMenu .adultsTxt {
   font-size: 0.8em;
   padding-top: 5px;
   padding-left: 35px;
 }
-/* line 55, ../sass/offeritem.scss */
+/* line 56, ../sass/offeritem.scss */
 .thumbnail .addToCartButtonMenu .addToCart {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 100%;
 }
-/* line 60, ../sass/offeritem.scss */
+/* line 61, ../sass/offeritem.scss */
 .thumbnail .addToCartButtonMenu .addToCart:hover {
   background-color: white;
   color: black;
 }
-/* line 66, ../sass/offeritem.scss */
+/* line 67, ../sass/offeritem.scss */
 .thumbnail .toggleAddToCartMenu {
   width: 100%;
   background-color: #3181db;
   font-size: 0.9em;
   font-weight: bold;
 }
-/* line 71, ../sass/offeritem.scss */
+/* line 72, ../sass/offeritem.scss */
 .thumbnail .toggleAddToCartMenu:hover {
   background-color: black;
   color: white;
 }
-/* line 77, ../sass/offeritem.scss */
+/* line 78, ../sass/offeritem.scss */
 .thumbnail a.offerName {
   font-family: 'Pacifico', cursive;
   font-size: 2em;
   text-decoration: none;
   color: #5c4b39;
 }
-/* line 84, ../sass/offeritem.scss */
+/* line 85, ../sass/offeritem.scss */
 .thumbnail .addToCart {
   background-color: #3181db;
 }
-/* line 88, ../sass/offeritem.scss */
+/* line 89, ../sass/offeritem.scss */
 .thumbnail .numberOfAdults {
   background-color: #1d6cc4;
 }
-/* line 90, ../sass/offeritem.scss */
+/* line 91, ../sass/offeritem.scss */
 .thumbnail .numberOfAdults option {
   background-color: #3181db;
 }
-/* line 93, ../sass/offeritem.scss */
+/* line 94, ../sass/offeritem.scss */
 .thumbnail .numberOfAdults:selection {
   background: #ffb7b7;
 }
