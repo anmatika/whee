@@ -9,8 +9,31 @@
 	padding-top: 75px;
 }
 
+.thumbnail {
+	padding-bottom: 0;
+}
+
 .thumbnail img {
 	height: 320px;
+
+}
+
+.thumbnail .caption h4 {
+	text-align: center;
+}
+
+.price {
+	height: 36px;
+	padding-top: 5px;
+
+	padding-left: auto;
+	padding-right: auto;
+}
+
+ #price {
+	color: white;
+	height: 36px;
+
 }
 
 body {
@@ -23,10 +46,14 @@ span#price {
 	font-weight: bold;
 }
 
+.price {
+	background-color: #0454B0;
+}
+
 button.toggleAddToCartMenu {
-	position: absolute;
-	bottom: 0;
-	right: 0;
+	
+	width: 100%;
+	background-color: #0454B0;
 }
 
 a#offerName {
@@ -34,6 +61,7 @@ a#offerName {
 	font-size: 2em;
 	text-decoration: none;
 	color: brown;
+
 }
 
 .addToCart {
@@ -53,7 +81,7 @@ a#offerName {
 }
 .addToCartButtonMenu {
 	display: none;
-	border: 2px solid;
+	border: 2px solid blue;
 	position: absolute;
 	bottom: -75px;
 	right: 0;
@@ -61,6 +89,13 @@ a#offerName {
 	height: 75px;
 	width: 200px;
 	background-color: #1F87FF;
+	color: white;
+
+}
+
+.addToCartButtonMenu #adults {
+	text-transform: uppercase;
+	font-size: 0.8em;		
 }
 
 .addToCartButtonMenu .addToCart {
@@ -69,3 +104,4 @@ a#offerName {
 	right: 0;
 	width: 100%;
 }
+

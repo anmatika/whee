@@ -1,12 +1,15 @@
 {
   "name": "whee",
   "version": "0.0.0-1",
-  "dependencies": {},
+  "dependencies": {
+    "wiredep": "^2.2.2"
+  },
   "devDependencies": {
     "grunt": "^0.4.1",
-    "grunt-contrib-compass": "^0.7.2",    
+    "grunt-contrib-compass": "^0.7.2",
     "grunt-contrib-watch": "^0.6.1",
-    "load-grunt-tasks": "^0.4.0",    
+    "grunt-wiredep": "^2.0.0",
+    "load-grunt-tasks": "^0.4.0",
     "time-grunt": "^0.3.1"
   },
   "engines": {

@@ -14,7 +14,7 @@
         // event handlers can be bound only after template has been loaded
 		
         $('.toggleAddToCartMenu').click(function(){
-        	$(this).next('.addToCartButtonMenu').toggle();
+        	$(this).parent().parent().next('.addToCartButtonMenu').toggle();
         });
         
         // populate the number of adults dropdown
@@ -25,11 +25,13 @@
 
         // Add to Cart button click handler 
         $('.addToCart').click(function(){
-
+        	$(this).addClass('backgroundBlack');
 			// for the id 3 format -> addToCart.3, for the id 5 -> addToCart.5 etc.
 			var clickedItemId = $(this).attr('id'),
 			item,
 			id;
+
+
 
 			// split addToCart.id and grap the offer id from the string
 			id = clickedItemId.split('.')[1];	 	

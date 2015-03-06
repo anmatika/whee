@@ -2,6 +2,20 @@
   "name": "whee",
   "version": "0.0.0",
   "dependencies": {
-    "bootstrap": "^3.2.0"
-  }
+    "bootstrap": "^3.2.0",
+    "jquery-tmpl": ""
+  },
+  "homepage": "https://github.com/anmatika/whee",
+  "authors": [
+    "anmatika <4ntti.matikainen@gmail.com>"
+  ],
+  "description": "whee",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
