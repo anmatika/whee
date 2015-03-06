@@ -20,16 +20,16 @@ Automatic sass -> css conversion and bower injection by running
 ## 4. PROJECT STRUCTURE
 
  +css - sass compiled css
- 
  +sass - sass styles
- + fonts - glyphicons
- + images
- + js - javascripts
- + bower_components - bower installed vendor components
- + node_modules - node modules (basically grunt components)
+ +fonts - glyphicons
+ +images
+ +js - javascripts
+ +bower_components - bower installed vendor components
+ +node_modules - node modules (basically grunt components)
 
-- index.html
-- offers.json 
+ index.html
+ 
+ offers.json 
 
 ## 5. TECHNICAL DETAILS
 
