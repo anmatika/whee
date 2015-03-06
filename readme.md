@@ -3,15 +3,15 @@
 Showing travelling agent Whee's travel deal offers. The data comes from the static JSON file "offers.json".
 The data are shown on the main page where user can browse the deals and add them into the shopping cart. 
 
-2. USAGE
+## 2. USAGE
 
-Open index.html
+Open `index.html`
 
 ## 3. DEV
 
 Install dependencies by running
-* npm install
-* bower install
+`npm install`
+`bower install`
 
 Automatic sass -> css conversion and bower injection by running 
 `grunt`
@@ -19,13 +19,13 @@ Automatic sass -> css conversion and bower injection by running
 
 ## 4. PROJECT STRUCTURE
 
-+ css - sass compiled css
-+ sass - sass styles
-+ fonts - glyphicons
-+ images
-+ js - javascripts
-+ bower_components - bower installed vendor components
-+ node_modules - node modules (basically grunt components)
+* + css - sass compiled css
+* + sass - sass styles
+* + fonts - glyphicons
+* + images
+* + js - javascripts
+* + bower_components - bower installed vendor components
+* + node_modules - node modules (basically grunt components)
 
 index.html
 offers.json 
