@@ -1,107 +1,19 @@
-/* line 5, ../sass/index.scss */
+/* line 3, ../sass/index.scss */
 .navbar {
   background-color: black;
 }
+/* line 5, ../sass/index.scss */
+.navbar .simpleCart_quantity {
+  font-weight: bold;
+  color: white;
+}
 
-/* line 9, ../sass/index.scss */
+/* line 11, ../sass/index.scss */
 #contentContainer {
   padding-top: 75px;
 }
 
-/* line 13, ../sass/index.scss */
-.thumbnail {
-  padding-bottom: 0;
-}
 /* line 15, ../sass/index.scss */
-.thumbnail img {
-  height: 320px;
-}
-/* line 18, ../sass/index.scss */
-.thumbnail .caption {
-  height: auto;
-}
-/* line 20, ../sass/index.scss */
-.thumbnail .caption h4 {
-  text-align: center;
-}
-/* line 24, ../sass/index.scss */
-.thumbnail .descriptionMenu {
-  padding: 10px 10px 10px 10px;
-  display: none;
-}
-/* line 28, ../sass/index.scss */
-.thumbnail .price {
-  height: 36px;
-  padding-top: 5px;
-  padding-left: auto;
-  padding-right: auto;
-  background-color: #1F87FF;
-  overflow: hidden;
-}
-/* line 37, ../sass/index.scss */
-.thumbnail .priceVal {
-  color: white;
-  height: 36px;
-  font-weight: bold;
-}
-/* line 42, ../sass/index.scss */
-.thumbnail .addToCartButtonMenu {
-  display: none;
-  border: 2px solid blue;
-  position: absolute;
-  bottom: -70px;
-  right: 0;
-  z-index: 999;
-  height: 70px;
-  width: 180px;
-  background-color: #1F87FF;
-  color: white;
-}
-/* line 53, ../sass/index.scss */
-.thumbnail .addToCartButtonMenu .adultsTxt {
-  font-size: 0.8em;
-  padding-top: 5px;
-  padding-left: 35px;
-}
-/* line 58, ../sass/index.scss */
-.thumbnail .addToCartButtonMenu .addToCart {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-}
-/* line 66, ../sass/index.scss */
-.thumbnail .toggleAddToCartMenu {
-  width: 100%;
-  background-color: #0454B0;
-  font-size: 0.9em;
-  font-weight: bold;
-}
-/* line 73, ../sass/index.scss */
-.thumbnail a.offerName {
-  font-family: 'Pacifico', cursive;
-  font-size: 2em;
-  text-decoration: none;
-  color: brown;
-}
-/* line 80, ../sass/index.scss */
-.thumbnail .addToCart {
-  background-color: #0454B0;
-}
-/* line 84, ../sass/index.scss */
-.thumbnail .numberOfAdults {
-  background-color: #1F87FF;
-}
-/* line 86, ../sass/index.scss */
-.thumbnail .numberOfAdults option {
-  background-color: #0454B0;
-}
-/* line 89, ../sass/index.scss */
-.thumbnail .numberOfAdults:selection {
-  background: #ffb7b7;
-}
-
-/* line 95, ../sass/index.scss */
 body {
   background-image: url("../images/bg.jpg");
   background-size: cover;

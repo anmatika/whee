@@ -50,7 +50,7 @@
 /* line 44, ../sass/cart.scss */
 #simpleCartWrapper {
   display: none;
-  background-color: #1F87FF;
+  background-color: #1d6cc4;
   height: auto;
   z-index: 999;
   padding: 70px 10px 10px 50px;
@@ -154,12 +154,13 @@
   border-radius: 50%;
   font-size: 50px;
   color: #fff;
+  font-weight: bold;
   line-height: 500px;
   text-align: center;
-  background: blue;
+  background: #1d6cc4;
 }
 
-/* line 140, ../sass/cart.scss */
+/* line 141, ../sass/cart.scss */
 #shoppingCartText {
   position: absolute;
   right: 100px;
@@ -169,7 +170,7 @@
   font-weight: bold;
 }
 
-/* line 149, ../sass/cart.scss */
+/* line 150, ../sass/cart.scss */
 #cartFooter {
   position: relative;
   height: auto;
@@ -177,26 +178,26 @@
   border-top: 1px solid;
 }
 
-/* line 156, ../sass/cart.scss */
+/* line 157, ../sass/cart.scss */
 .cartButton {
   text-decoration: none;
 }
-/* line 158, ../sass/cart.scss */
+/* line 159, ../sass/cart.scss */
 .cartButton:hover, .cartButton:visited {
   text-decoration: none;
 }
 
-/* line 163, ../sass/cart.scss */
+/* line 164, ../sass/cart.scss */
 #emptyCart {
   margin-right: 50px;
 }
 
-/* line 167, ../sass/cart.scss */
+/* line 168, ../sass/cart.scss */
 #cartFooter span:first-of-type {
   font-weight: bold;
 }
 
-/* line 171, ../sass/cart.scss */
+/* line 172, ../sass/cart.scss */
 #cartLogo {
   color: white;
   cursor: pointer;
