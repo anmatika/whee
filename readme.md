@@ -20,6 +20,7 @@ Automatic sass -> css conversion and bower injection by running
 ## 4. PROJECT STRUCTURE
 
  --css - sass compiled css
+ 
  --sass - sass styles
  + fonts - glyphicons
  + images
