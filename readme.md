@@ -14,7 +14,7 @@ Install dependencies by running
 * bower install
 
 Automatic sass -> css conversion and bower injection by running 
-'grunt'
+´grunt´
 
 ## 4. PROJECT STRUCTURE
 
