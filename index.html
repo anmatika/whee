@@ -7,7 +7,11 @@
       <meta name="description" content="">
       <meta name="author" content="4ntti.matikainen@gmail.com">
       <title>Whee</title>
-      <link href="css/bootstrap.min.css" rel="stylesheet">
+       <!-- bower:css -->
+       <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
+       <!-- endbower -->
+      <link href="css/vendor/jquery.ui.css" rel="stylesheet">
+      <link href="css/vendor/jquery.ui.theme.css" rel="stylesheet">
       <link href="css/shop-homepage.css" rel="stylesheet">
       <link href="css/common.css" rel="stylesheet">
       <link href="css/index.css" rel="stylesheet">
@@ -64,7 +68,7 @@
       <!-- Page Content -->
       <div class="container" id="contentContainer">
          <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                <div class="row">
                   <div id="shopItemContainer"></div>
                </div>
@@ -86,53 +90,63 @@
       <!-- /.container -->
       <!-- bower:js -->
       <script src="bower_components/jquery/dist/jquery.js"></script>
-      <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="bclasser_components/bootstrap/dist/js/bootstrap.js"></script>
       <!-- endbower -->
       <!-- TODO: for some reason tmpl won't be injected by wiredep -->
       <script src="bower_components/jquery-tmpl/jquery.tmpl.min.js"></script>
-      <script src="js/simpleCart.js"></script>
-      <script src="js/index.js"></script>
-      <script src="js/common.js"></script>
-      <script src="js/cart.js"></script>
+      <script src="bower_components/simplecart-js/simpleCart.js"></script>
       <!-- jQuery template for the offer item -->
+      <script src="js/vendor/jquery-ui.min.js"></script>
       <script id="shopItemTemplate" type="text/x-jQuery-tmpl">
-         <div class="col-sm-4 col-lg-4 col-md-4">
-             <div class="thumbnail">
-                 <input type="hidden" id="offerid" value=${id} />
-                 <img src="${image}" alt="image not available">
-                 <div class="caption">
-                     <h4><a id="offerName" href="#">${name}</a></h4>
-                     
+
+
+        <div class="col-sm-4">
+           <div class="thumbnail">
+              <input type="hidden" id="offerid" value=${id} />
+              <img src="${image}" alt="image not available">
+              <div class="caption">
+                 <h4><a class="offerName" href="javascript:;">${name}</a>
+                 </h4>
+              </div>
+              <div class="row no-horizontal-margin" >
+                 <div class="col-sm-6 price">
+                    <div class="priceVal">${formatPrice(price)} /hlö</div>
                  </div>
-                 <div class="row no-horizontal-margin" >
-                     <div class="col-sm-6 price">
-                         <div id="price">${formatPrice(price)} /hlö</div>
-                     </div>
-                     <div class="col-sm-6 no-gutter">
-                         <button type="button" class="rectangleBtn toggleAddToCartMenu pull-right">Ostoskoriin</button>
-                     </div>
+                 <div class="col-sm-6 no-gutter">
+                    <button type="button" class="rectangleBtn capitalize toggleAddToCartMenu pull-right">Ostoskoriin</button>
                  </div>
-                 <div class="addToCartButtonMenu">
-                     <div class="row">
-                         <div class="col-sm-3">
-                         <select class="numberOfAdults"></select>
-                     </div>
-                     <div id="adults" class="col-sm-9">
-                         Aikuista
-                     </div>
+              </div>
+              
+              <div class="addToCartButtonMenu">
+                 <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+                       <select class="numberOfAdults"></select>
+                    </div>
+                    <div class="adultsTxt col-xs-12 col-sm-9">
+                       Aikuinen
+                    </div>
                  </div>
-                 
-                 <button type="button" id="addToCart.${id}" class="addToCart btn-success btn">Lisää
-                 </button>
+                 <div class="row">
+                        <button type="button" id="addToCart.${id}" class="addToCart capitalize bold btn-success btn">Lisää
+                        </button>
                  </div>
-             </div>
-         </div>
+              </div>
+              <div class="descriptionMenu">
+                 <p>"${description}"</p>
+              </div>
+           </div>
+        </div>
+
       </script>
       <script type="text/javascript">
-         function formatPrice(price) {
+        function formatPrice(price) {
              return price.toFixed(2) + " €";
          }
       </script>
+    
+      <script src="js/index.js"></script>
+      <script src="js/common.js"></script>
+      <script src="js/cart.js"></script>
    </body>
 </html>
 

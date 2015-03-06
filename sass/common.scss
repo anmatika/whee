@@ -1,0 +1,31 @@
+.backgroundBlack {
+  background-color: black;
+}
+
+.rectangleBtn {
+  border: 1px solid #000;
+  background: #f00;
+  height: 36px;
+  padding: 0 !important;
+  color: white;
+  width: 100%;
+  &:hover{
+    background-color: black;
+  }
+}
+.no-gutter {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.no-horizontal-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.capitalize {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold
+}

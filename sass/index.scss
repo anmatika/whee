@@ -1,0 +1,101 @@
+@import "settings";
+
+
+
+.navbar {
+  background-color: black;
+}
+
+#contentContainer {
+  padding-top: 75px;
+}
+
+.thumbnail {
+  padding-bottom: 0;
+  img {
+    height: 320px;
+  }
+  .caption {
+    height: auto;
+    h4 {
+      text-align: center;
+    }
+  }
+  .descriptionMenu {
+    padding: 10px 10px 10px 10px;
+    display: none;
+  }
+  .price {
+    height: 36px;
+    padding-top: 5px;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: $color_blue_1;
+  }
+
+  .priceVal {
+    color: white;
+    height: 36px;
+    font-weight: bold;
+  }
+  .addToCartButtonMenu {
+    display: none;
+    border: 2px solid blue;
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    z-index: 999;
+    height: 70px;
+    width: 180px;
+    background-color: $color_blue_1;
+    color: white;
+    .adultsTxt {
+      font-size: 0.8em;
+      padding-top: 5px;
+      padding-left: 35px;
+    }
+    .addToCart {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      
+    }  
+  }
+  .toggleAddToCartMenu {
+    width: 100%;
+    background-color: $color_blue_2;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  a.offerName {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    text-decoration: none;
+    color: brown;
+  }
+
+  .addToCart {
+    background-color: $color_blue_2;
+  }
+
+  .numberOfAdults {
+    background-color: $color_blue_1;
+    option {
+      background-color: $color_blue_2;
+    }
+    &:selection {
+      background: #ffb7b7;
+    }
+  }
+} //.thumbnail
+
+body {
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  font-size: 18px;
+}
+
+
+

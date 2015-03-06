@@ -1,26 +1,40 @@
+/* line 1, ../sass/common.scss */
 .backgroundBlack {
   background-color: black;
 }
 
+/* line 5, ../sass/common.scss */
 .rectangleBtn {
-    border: 1px solid #000;
-    background: #f00;
-    height: 36px;
-    padding: 0 !important;
-    color: white;
-    width: 100%;
+  border: 1px solid #000;
+  background: #f00;
+  height: 36px;
+  padding: 0 !important;
+  color: white;
+  width: 100%;
 }
-
+/* line 12, ../sass/common.scss */
 .rectangleBtn:hover {
   background-color: black;
 }
 
+/* line 16, ../sass/common.scss */
 .no-gutter {
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
 
+/* line 20, ../sass/common.scss */
 .no-horizontal-margin {
   margin-left: 0;
   margin-right: 0;
+}
+
+/* line 25, ../sass/common.scss */
+.capitalize {
+  text-transform: uppercase;
+}
+
+/* line 29, ../sass/common.scss */
+.bold {
+  font-weight: bold;
 }

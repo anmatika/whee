@@ -23,9 +23,12 @@ module.exports = function(grunt) {
         src: ['sass/{,*/}*.{scss,sass}'],
         ignorePath: /(\.\.\/){1,2}bower_components\//
       }
+    },
+    jshint: {
+       all: ['Gruntfile.js', 'js/**/*.js']
     }
   });
 
   grunt.registerTask('default', ['wiredep', 'compass']);
 
-}
+};
