@@ -10,8 +10,8 @@ Open `index.html`
 ## 3. DEV
 
 Install dependencies by running
-`npm install`
-`bower install`
+- `npm install`
+- `bower install`
 
 Automatic sass -> css conversion and bower injection by running 
 `grunt`
