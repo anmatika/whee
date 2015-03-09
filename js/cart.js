@@ -23,7 +23,7 @@
 	});
 
 	// toggles the cart visibility
-	$('#cartLogo').click(function() {
+	$('#cartLogo, #emptyCart').click(function() {
 		$('#simpleCartWrapper').toggle("slow");
 	});
 
