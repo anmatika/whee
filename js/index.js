@@ -1,13 +1,13 @@
-"use strict";
-
 (function($) {
+	"use strict";
 	var data;
 
 	// get the offers, wait for completion
 	// NOTE: this should be the FIRST ACTION of the file
 	$.ajax({
 			type: "GET",
-			url: "offers.json",
+			url: $('body').data('offers'),
+			// url: "base/offers.json",
 			async: false,
 			dataType: "json"
 		}).done(function(d) {
@@ -19,13 +19,13 @@
 	// render the offers using the shopItemTemplate
 	$("#shopItemTemplate").tmpl(data.offers).appendTo("#shopItemContainer");
 
-	// populate the number of adults dropdown
+	// populates the number of adults dropdowns
 	function populateNumberOfAdults() {
 		var select = $(".numberOfAdults"),
 		i;
 
 		for (i = 1; i <= 10; i++) {
-			select.append($('<option></option>').val(i).html(i))
+			select.append($('<option></option>').val(i).html(i));
 		}
 	}
 
@@ -36,7 +36,7 @@
 		$(this).parent().parent().next('.addToCartButtonMenu').toggle();
 	});
 
-	// Add to Cart button click handler 
+	// adds the offer item into the cart 
 	$('.addToCart').click(function() {
 		var clickedItemId = $(this).attr('id'),
 			item,
@@ -45,15 +45,19 @@
 						.closest('.addToCartButtonMenu')
 						.find('.numberOfAdults').val();
 
-		$(this).parent().parent().hide();
+		$(this).parent().parent().hide();		
+		
 		// split addToCart.id and grap the offer id from the string
-		// for the id 3 format -> addToCart.3, 
+		// e.g for the offer id 3 format -> addToCart.3, 
 		// for the id 5 -> addToCart.5 etc.
-		id = clickedItemId.split('.')[1];
+		id = clickedItemId.split('.');
+		if(id.length < 2){
+			console.error('Cannot add into the shopping cart. Item cannot be parsed');
+			return;
+		}
+		id = id[1];
 
-		// TODO: error handling 
-
-		// get the corresponding item from the returned json array
+		// get the corresponding item from the offers.json array
 		item = getItem(data.offers, id);
 
 		if (item !== 0) {
@@ -67,11 +71,12 @@
 		}
 	});
 
+	// toggles the visibility of the offer description
 	$('.offerName').click(function(){
 		$(this).parent().parent().parent().find('.descriptionMenu').toggle();
-	})
+	});
 
-	/** gets the item by the id from the given items */
+	// gets the item by the id from the items array
 	function getItem(items, id) {
 		var i,
 			item;

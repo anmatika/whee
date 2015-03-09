@@ -92,7 +92,10 @@
       background-color: $color_blue_2;
     }
     &:selection {
-      background: #ffb7b7;
+      background: $color_blue_2;
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
 } //.thumbnail

@@ -1,11 +1,11 @@
 module.exports = function(grunt) {
-  // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
   
   grunt.initConfig({
     
-    compass: { // Task     
-      dev: { // target
+    // watch automatically sass changes
+    compass: {      
+      dev: { 
         options: {
           sassDir: 'sass',
           cssDir: 'css',
@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    // Automatically inject Bower components into the app
+    // automatically inject bower components into the app
     wiredep: {
       app: {
         src: ['index.html'],
@@ -24,11 +24,12 @@ module.exports = function(grunt) {
         ignorePath: /(\.\.\/){1,2}bower_components\//
       }
     },
+    // jshint for javascripts
     jshint: {
        all: ['Gruntfile.js', 'js/**/*.js']
     }
   });
 
-  grunt.registerTask('default', ['wiredep', 'compass']);
+  grunt.registerTask('default', ['wiredep', 'jshint', 'compass']);
 
 };

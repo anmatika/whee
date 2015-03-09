@@ -9,9 +9,7 @@
       <title>Whee</title>
        <!-- bower:css -->
        <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
-       <!-- endbower -->
-      <link href="css/vendor/jquery.ui.css" rel="stylesheet">
-      <link href="css/vendor/jquery.ui.theme.css" rel="stylesheet">
+       <!-- endbower -->      
       <link href="css/shop-homepage.css" rel="stylesheet">
       <link href="css/common.css" rel="stylesheet">
       <link href="css/index.css" rel="stylesheet">
@@ -19,7 +17,7 @@
       <link href="css/offeritem.css" rel="stylesheet">
       <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
    </head>
-   <body>
+   <body data-offers="offers.json">
       <!-- Navigation -->
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
          <div class="container">
@@ -78,13 +76,12 @@
       <!-- /.container -->
       <!-- bower:js -->
       <script src="bower_components/jquery/dist/jquery.js"></script>
-      <script src="bclasser_components/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
       <!-- endbower -->
       <!-- TODO: for some reason tmpl won't be injected by wiredep -->
       <script src="bower_components/jquery-tmpl/jquery.tmpl.min.js"></script>
       <script src="bower_components/simplecart-js/simpleCart.js"></script>
       <!-- jQuery template for the offer item -->
-      <script src="js/vendor/jquery-ui.min.js"></script>
       <script id="shopItemTemplate" type="text/x-jQuery-tmpl">
         <div class="col-sm-4">
            <div class="thumbnail">

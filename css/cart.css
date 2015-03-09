@@ -22,119 +22,32 @@
     display: none;
   }
 }
-/* line 23, ../sass/cart.scss */
-#cartLogo {
+/* line 24, ../sass/cart.scss */
+nav #cartLogo {
   width: 32px;
   height: 32px;
   position: absolute;
   top: 0px;
   right: 200px;
+  color: white;
+  cursor: pointer;
 }
-
-/* line 31, ../sass/cart.scss */
-#cartImg {
+/* line 33, ../sass/cart.scss */
+nav #cartImg {
   position: absolute;
   top: 5px;
 }
-/* line 34, ../sass/cart.scss */
-#cartImg path {
+/* line 36, ../sass/cart.scss */
+nav #cartImg path {
   fill: white;
 }
-
-/* line 39, ../sass/cart.scss */
-#wheeLogo path {
+/* line 40, ../sass/cart.scss */
+nav #wheeLogo path {
   fill: white;
   filter: drop-shadow(5px 3px 1px black);
 }
-
 /* line 44, ../sass/cart.scss */
-#simpleCartWrapper {
-  display: none;
-  background-color: #1d6cc4;
-  height: auto;
-  z-index: 999;
-  padding: 70px 10px 10px 50px;
-  color: white;
-}
-/* line 51, ../sass/cart.scss */
-#simpleCartWrapper .simpleCart_increment, #simpleCartWrapper .simpleCart_decrement {
-  color: black;
-}
-/* line 54, ../sass/cart.scss */
-#simpleCartWrapper .simpleCart_items {
-  padding-bottom: 10px;
-}
-/* line 56, ../sass/cart.scss */
-#simpleCartWrapper .simpleCart_items .headerRow {
-  display: none;
-}
-/* line 59, ../sass/cart.scss */
-#simpleCartWrapper .simpleCart_items .itemRow {
-  margin-bottom: 100px;
-  position: relative;
-}
-/* line 62, ../sass/cart.scss */
-#simpleCartWrapper .simpleCart_items .itemRow .item-name {
-  position: absolute;
-  font-size: 1.5em;
-  font-weight: bold;
-  left: 150px;
-}
-/* line 68, ../sass/cart.scss */
-#simpleCartWrapper .simpleCart_items .itemRow .item-description {
-  position: absolute;
-  font-size: 1.2em;
-  left: 350px;
-  font-style: italic;
-  padding-top: 5px;
-}
-/* line 75, ../sass/cart.scss */
-#simpleCartWrapper .simpleCart_items .itemRow .item-decrement {
-  position: absolute;
-  font-size: 1.2em;
-  left: 150px;
-  display: block;
-  top: 40px;
-}
-/* line 82, ../sass/cart.scss */
-#simpleCartWrapper .simpleCart_items .itemRow .item-price {
-  position: absolute;
-  font-size: 1.2em;
-  left: 150px;
-  top: 80px;
-}
-/* line 88, ../sass/cart.scss */
-#simpleCartWrapper .simpleCart_items .itemRow .item-quantity {
-  position: absolute;
-  font-size: 1.2em;
-  left: 170px;
-  top: 40px;
-}
-/* line 94, ../sass/cart.scss */
-#simpleCartWrapper .simpleCart_items .itemRow .item-increment {
-  position: absolute;
-  font-size: 1.2em;
-  left: 190px;
-  top: 40px;
-}
-/* line 100, ../sass/cart.scss */
-#simpleCartWrapper .simpleCart_items .itemRow .item-image img {
-  position: absolute;
-  font-size: 1.2em;
-  height: 128px;
-  width: 128px;
-  left: 0;
-  border: 2px solid;
-}
-
-/* line 112, ../sass/cart.scss */
-.simpleCart_total {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-/* line 116, ../sass/cart.scss */
-.simpleCart_quantity {
+nav .simpleCart_quantity {
   position: absolute;
   right: 63px;
   top: 7px;
@@ -143,9 +56,8 @@
   height: 10px;
   z-index: 999;
 }
-
-/* line 126, ../sass/cart.scss */
-#quantityCircle {
+/* line 53, ../sass/cart.scss */
+nav #quantityCircle {
   right: 50px;
   top: 0;
   position: absolute;
@@ -159,9 +71,8 @@
   text-align: center;
   background: #1d6cc4;
 }
-
-/* line 141, ../sass/cart.scss */
-#shoppingCartText {
+/* line 67, ../sass/cart.scss */
+nav #shoppingCartText {
   position: absolute;
   right: 100px;
   top: 10px;
@@ -169,36 +80,111 @@
   font-size: 0.9em;
   font-weight: bold;
 }
-
-/* line 150, ../sass/cart.scss */
-#cartFooter {
+/* line 75, ../sass/cart.scss */
+nav #cartFooter {
   position: relative;
   height: auto;
   padding-top: 20px;
   border-top: 1px solid;
 }
-
-/* line 157, ../sass/cart.scss */
-.cartButton {
+/* line 81, ../sass/cart.scss */
+nav .cartButton {
   text-decoration: none;
 }
-/* line 159, ../sass/cart.scss */
-.cartButton:hover, .cartButton:visited {
+/* line 83, ../sass/cart.scss */
+nav .cartButton:hover, nav .cartButton:visited {
   text-decoration: none;
 }
-
-/* line 164, ../sass/cart.scss */
-#emptyCart {
+/* line 87, ../sass/cart.scss */
+nav .simpleCart_total {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* line 91, ../sass/cart.scss */
+nav #emptyCart {
   margin-right: 50px;
 }
-
-/* line 168, ../sass/cart.scss */
-#cartFooter span:first-of-type {
+/* line 94, ../sass/cart.scss */
+nav #cartFooter span:first-of-type {
   font-weight: bold;
 }
 
-/* line 172, ../sass/cart.scss */
-#cartLogo {
+/* line 99, ../sass/cart.scss */
+#simpleCartWrapper {
+  display: none;
+  background-color: #1d6cc4;
+  height: auto;
+  z-index: 999;
+  padding: 70px 10px 10px 50px;
   color: white;
-  cursor: pointer;
+}
+/* line 106, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_increment, #simpleCartWrapper .simpleCart_decrement {
+  color: black;
+}
+/* line 109, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items {
+  padding-bottom: 10px;
+}
+/* line 111, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .headerRow {
+  display: none;
+}
+/* line 114, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow {
+  margin-bottom: 100px;
+  position: relative;
+}
+/* line 117, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-name {
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: bold;
+  left: 150px;
+}
+/* line 123, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-description {
+  position: absolute;
+  font-size: 1.2em;
+  left: 350px;
+  font-style: italic;
+  padding-top: 5px;
+}
+/* line 130, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-decrement {
+  position: absolute;
+  font-size: 1.2em;
+  left: 150px;
+  display: block;
+  top: 40px;
+}
+/* line 137, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-price {
+  position: absolute;
+  font-size: 1.2em;
+  left: 150px;
+  top: 80px;
+}
+/* line 143, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-quantity {
+  position: absolute;
+  font-size: 1.2em;
+  left: 170px;
+  top: 40px;
+}
+/* line 149, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-increment {
+  position: absolute;
+  font-size: 1.2em;
+  left: 190px;
+  top: 40px;
+}
+/* line 155, ../sass/cart.scss */
+#simpleCartWrapper .simpleCart_items .itemRow .item-image img {
+  position: absolute;
+  font-size: 1.2em;
+  height: 128px;
+  width: 128px;
+  left: 0;
+  border: 2px solid;
 }

@@ -1,9 +1,9 @@
-"use strict";
-
 (function($){
+	"use strict";
 		
 	/*
 	 * Replace all SVG images with inline SVG
+	   copied from here: http://stackoverflow.com/a/11978996
 	 */
 	$('img.svg').each(function(){
 	    
@@ -32,9 +32,5 @@
 	        $img.replaceWith($svg);
 
 	    }, 'xml');
-
 	});
-
-    
-
 }(jQuery));

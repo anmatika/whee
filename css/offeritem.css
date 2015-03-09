@@ -107,5 +107,9 @@
 }
 /* line 94, ../sass/offeritem.scss */
 .thumbnail .numberOfAdults:selection {
-  background: #ffb7b7;
+  background: #3181db;
+}
+/* line 97, ../sass/offeritem.scss */
+.thumbnail .numberOfAdults:hover {
+  cursor: pointer;
 }

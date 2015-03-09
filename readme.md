@@ -1,15 +1,23 @@
 ## 1. ABSTRACT
 
 Showing travelling agent Whee's travel deal offers. The data comes from the static JSON file "offers.json".
-The data are shown on the main page where user can browse the deals and add them into the shopping cart. 
+The data are shown on the main page where user can browse the deals and add them into the shopping cart. The shopping cart can be modified by adding and removing items. Once the cart is ready, checking out directs to Paypal. 
 
 ## 2. USAGE
 
-Open `index.html` on any browser. Tested on Firefox only, though.
+If no web server configured,
+just open `index.html` on Firefox. Firefox allows loading data from external files locally   (file:///index.html) out of the box. 
+
+Other browsers should be configured running things locally. More info here:
+https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally
+
+Or if you want to set-up http-server for this, follow these instructions
+https://github.com/skeelogy/ifc-ar-flood/wiki/Running-The-HTML-Files-Locally-In-Your-Web-Browser
+And run `http-server` in the root folder
 
 ## 3. DEV
 
-Install dependencies by running in the root folder
+Install dependencies by running the following commands in the root folder
  
 `npm install`
 
@@ -22,25 +30,28 @@ Automatic sass -> css conversion and bower injection by running
 
 ## 4. PROJECT STRUCTURE
 ```
- +css  (sass compiled css)
- +sass (sass styles)
+ +css  (css files, compiled from sass)
+ +sass (sass files)
  +fonts (glyphicons) 
  +images
  +js (javascripts)
  +bower_components (bower installed vendor components)
- +node_modules - (node modules (basically grunt components))
- index.html (main page)
- offers.json (travel offer data file)
+ +node_modules - (tools, basically for grunt)
+ index.html (the main page)
+ offers.json (data source file)
+ Gruntfile.js (grunt js automation)
+ package.json (node_module package config)
+ bower.json (bower components config)
 ```
 
 ## 5. TECHNICAL DETAILS
 
-* Cart is based on Simplecartjs.
+* The cart is based on Simplecartjs.
 * The initial look and feel is based on the free bootsrap temlate shop-homepage
-* jQuery.tmpl is used for templating the offer item
+* jQuery.tmpl is used for templating the offer items
  
 
-## 6. COMPONENTS USED
+## 6. DEPENDENCIES
 	
 ### 6.1 Simplecart js
 	http://simplecartjs.org/documentation
@@ -49,24 +60,24 @@ Automatic sass -> css conversion and bower injection by running
     https://github.com/BorisMoore/jquery-tmpl
 
 ### 6.3 Bootstrap
+	http://getbootstrap.com/
 
 ### 6.4 jQuery
+	jquery.com/
 
 ## 7. TOOLS
 
 ### 7.1 npm
-Node package manager
+Node package manager 
 
 ### 7.2 Bower
 For getting dependecies
 
 ### 7.3 Wiredep
-For injecting bower componenents into the app
-
+For injecting bower componenents automatically into the app
 
 ### 7.3 Compass + SASS
 Compass for automatic sass -> css conversion.
 
-
 ### 7.4 Grunt
-Automated js tasks
+For automating js tasks

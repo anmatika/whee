@@ -1,6 +1,6 @@
-"use strict";
+(function($){
+	"use strict";
 
-(function(){
 	// simplecart initialization		
 	simpleCart({
 		// "div" or "table" - builds the cart as a
@@ -22,9 +22,9 @@
     	],
 	});
 
-	// toggles cart visibility
+	// toggles the cart visibility
 	$('#cartLogo').click(function() {
 		$('#simpleCartWrapper').toggle("slow");
 	});
 
-}());
+}(jQuery));
