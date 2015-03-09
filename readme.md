@@ -6,6 +6,7 @@ The data are shown on the main page where user can browse the deals and add them
 ## 2. USAGE
 
 NOTE: Does not work on IE if protected mode is set on. Simplecart uses HTML5 localstorage which gives an access denied error if the protected mode set on. More info here: https://github.com/MrSwitch/hello.js/issues/35
+When using Firefox or Chrome no actions needed.
 
 If no web server configured,
 just open `index.html` on Firefox. Firefox allows loading data from external files locally   (file:///index.html) out of the box. 
