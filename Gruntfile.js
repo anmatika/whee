@@ -24,7 +24,6 @@ module.exports = function(grunt) {
         ignorePath: /(\.\.\/){1,2}bower_components\//
       }
     },
-    // jshint for javascripts
     jshint: {
        all: ['Gruntfile.js', 'js/**/*.js']
     }
