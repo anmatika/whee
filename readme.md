@@ -23,7 +23,7 @@ Install dependencies by running the following commands in the root folder
 
 `bower install`
 
-Automatic sass -> css conversion and bower injection by running 
+Automatic sass -> css conversion, jshint and dependency injection by running 
 
 `grunt`
 
@@ -47,7 +47,7 @@ Automatic sass -> css conversion and bower injection by running
 ## 5. TECHNICAL DETAILS
 
 * The cart is based on Simplecartjs.
-* The initial look and feel is based on the free bootsrap temlate shop-homepage
+* The initial look and feel is based on the free bootsrap template shop-homepage
 * jQuery.tmpl is used for templating the offer items
  
 
@@ -68,10 +68,10 @@ Automatic sass -> css conversion and bower injection by running
 ## 7. TOOLS
 
 ### 7.1 npm
-Node package manager 
+Node package manager for getting the tools
 
 ### 7.2 Bower
-For getting dependecies
+For getting dependencies
 
 ### 7.3 Wiredep
 For injecting bower componenents automatically into the app
